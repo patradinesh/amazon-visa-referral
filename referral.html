@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Visa Rewards</title>
+    <meta name="description" content="Earn cashback and exclusive rewards with the Amazon Prime Visa card. Sign up today and get a welcome bonus!">
+
+    <!-- Google Analytics (Optional) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_GA_TRACKING_ID');
+    </script>
+
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 2rem; background: #f9f9f9; color: #333; }
+        .container { max-width: 600px; margin: auto; padding: 2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 12px; background: #fff; }
+        h1 { color: #232f3e; }
+        .cta-button { display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background: #ff9900; border: none; border-radius: 8px; text-decoration: none; transition: background 0.3s; }
+        .cta-button:hover { background: #e68a00; }
+        .footer { margin-top: 2rem; font-size: 14px; color: #666; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Earn More with the Amazon Prime Visa Card!</h1>
+        <p>✅ Get <strong>5% cashback</strong> on Amazon & Whole Foods. No annual fee with Prime.</p>
+        <p>🎁 Limited-Time: Sign up now and receive an exclusive <strong>welcome bonus</strong>!</p>
+
+        <a href="https://www.amazon.com/dp/BT00LN946S?externalReferenceId=281f1550-7ab4-4234-bc42-b1d88f45a6aa" class="cta-button" id="referral-link" target="_blank">Claim Your Bonus</a>
+
+        <p class="footer">Referral Disclosure: I may earn a bonus if you sign up using my link.</p>
+    </div>
+
+    <!-- Click Tracking -->
+    <script>
+      document.getElementById('referral-link').addEventListener('click', function() {
+          console.log('Referral link clicked');
+          gtag('event', 'click', {
+              'event_category': 'Amazon_Visa_Referral',
+              'event_label': 'Landing_Page_Click'
+          });
+      });
+    </script>
+</body>
+</html>
